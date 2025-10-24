@@ -1,6 +1,24 @@
 # Diamond-Hydrogen
 Utility to create diamond - hydrogen interfaces for VASP simulations
 
+## Contents
+```
+diamond-hydrogen/
+├── pyproject.toml
+├── README.md
+└── src/
+    └── diamond_hydrogen/
+        ├── __init__.py
+        ├── vasp_tools.py
+        └── diamond_hydrogen.py
+└── trunk/
+    └── cd-100.vasp
+    └── cd-110.vasp
+    └── cd-111.vasp
+```
+
+The `trunk` directory contains the starting unit cells, they are single unitcells, so you will need to enlarge them to an appropriate size, see below in [Examples] (## Example Usage)
+
 ## Installation
 Get the package and place in a central location
 `git clone https://github.com/joegonzalezMSL/Diamond-Hydrogen.git`
@@ -24,5 +42,23 @@ Entry-points:
   diamond-hydrogen = diamond_hydrogen.diamond_hydrogen:main
 ```
 
+Test the installation with
+```bash
+diamond-hydrogen -h
+```
+
+You should see the help menu.
+
+
 ## Example Usage
-python3 diamond_hydrogen.py trunk/cd-111.vasp -o poscar-111-h2 -r 3 4 3 --extend 10 -s 111
+
+```
+# build a structure from the 100 unit cell, keeping all defaults. Only useful if you have a pre-build lattice
+diamond-hydrogen trunk/cd-100.vasp
+
+# Replicate unit cell and add vacuum region
+diamond-hydrogen --extend 10 --replicate 3 3 4 trunk/cd-111.vasp -o POSCAR_334_H2
+
+# Specify surface type and H2 gas density
+diamond-hydrogen trunk/cd-110.vasp -o poscar-110-h2 -r 3 4 3 --extend 10 -s 111 -d 0.3
+```
