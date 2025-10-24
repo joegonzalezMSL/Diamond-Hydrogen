@@ -25,4 +25,4 @@ Entry-points:
 ```
 
 ## Example Usage
-python3 diamond_hydrogen.py cd-111.vasp -o poscar-111-h2 -r 3 4 3 --extend 10 -s 111
+python3 diamond_hydrogen.py trunk/cd-111.vasp -o poscar-111-h2 -r 3 4 3 --extend 10 -s 111
