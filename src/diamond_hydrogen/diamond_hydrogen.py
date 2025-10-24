@@ -85,9 +85,9 @@ def get_arguments(argv):
 	return args
 
 
-def main(argv):
+def main():
 
-	args = get_arguments(argv)
+	args = get_arguments(sys.argv[1:])
 
 	CH_BOND = args.CH_BOND
 	H2_DENSITY = args.H2_DENSITY
@@ -240,4 +240,5 @@ def main(argv):
 	print(f"Job complete! ")
 
 
-if __name__ == "__main__": main(sys.argv[1:])
+if __name__ == "__main__": 
+	main()
