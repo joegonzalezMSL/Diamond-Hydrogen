@@ -4,6 +4,11 @@ import numpy as np
 import argparse
 import textwrap
 
+## author: joe gonzalez
+## USF physics, Materials Simulation Laboratory
+## 10.24.2025
+## version 0.1
+
 ##constants
 HH_BOND = 0.74
 H2_MIN_MOL_DISTANCE = 2.0

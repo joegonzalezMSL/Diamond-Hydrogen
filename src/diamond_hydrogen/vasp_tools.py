@@ -1,5 +1,10 @@
 import numpy as np
 
+## author: joe gonzalez
+## USF physics, Materials Simulation Laboratory
+## 10.24.2025
+## version 0.1
+
 def replicate_unitcell(lattice, positions, num_atoms, numbers, reps):
     nx, ny, nz = reps
     orig_positions = positions.copy()
