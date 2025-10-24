@@ -17,7 +17,7 @@ diamond-hydrogen/
     └── cd-111.vasp
 ```
 
-The `trunk` directory contains the starting unit cells, they are single unitcells, so you will need to enlarge them to an appropriate size, see below in [Examples] (#Example-Usage)
+The `trunk` directory contains the starting unit cells, they are single unitcells, so you will need to enlarge them to an appropriate size, see below in [Examples](#Example-Usage)
 
 ## Installation
 Get the package and place in a central location
