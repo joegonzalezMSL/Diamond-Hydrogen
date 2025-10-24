@@ -1,5 +1,9 @@
 # Diamond-Hydrogen
-Utility to create diamond - hydrogen interfaces for VASP simulations
+Utility to add Hydrogen to the surface of a structure, create space 
+for adding H2 gas. Used in creating structures that resemble the 
+interface of diamond with DT Ice used in ICF experiments. Produces 
+POSCAR files for running VASP simulations
+
 
 ## Contents
 ```
