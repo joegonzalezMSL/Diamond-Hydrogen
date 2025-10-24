@@ -1,4 +1,4 @@
-import vasp_tools
+from . import vasp_tools
 import sys
 import numpy as np
 import argparse
